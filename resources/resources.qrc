@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/dashboard.png</file>
+    <file>icons/delete.png</file>
+    <file>icons/export.png</file>
+    <file>icons/file.png</file>
+    <file>icons/group.png</file>
+    <file>icons/logout.png</file>
+    <file>icons/mail.png</file>
+    <file>icons/refresh.png</file>
+    <file>icons/save.png</file>
+    <file>icons/settings.png</file>
+    <file>icons/start.png</file>
+    <file>icons/stop.png</file>
+    <file>icons/upload.png</file>
+  </qresource>
+  <qresource prefix="logo">
+    <file>logo/logo.png</file>
+  </qresource>
+</RCC>
