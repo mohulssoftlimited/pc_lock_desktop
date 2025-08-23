@@ -1,5 +1,6 @@
 import sys, requests, shutil, os, csv, datetime, re, threading, json, random, os, platform
 import pandas as pd
+import ctypes
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QMessageBox, QFileDialog,
 QListWidgetItem, QPushButton, QHBoxLayout, QWidget, QTableWidgetItem, QInputDialog,
 QDialog, QVBoxLayout, QLabel, QLineEdit, QDialogButtonBox, QStyledItemDelegate)
@@ -269,7 +270,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def lock_windows_pc(self):
         if platform.system() == "Windows":
             self.was_running = False
-            os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
+            ctypes.windll.user32.LockWorkStation()
+            # os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
 
     
     def reset_timer(self):
@@ -322,7 +324,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             time_text = "00:00:00"
             self.timer.stop()
             if platform.system() == "Windows":
-                os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
+                ctypes.windll.user32.LockWorkStation()
+                # os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
             
         else:
             hours = remaining_time // 3600
