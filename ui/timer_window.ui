@@ -2,17 +2,20 @@
 <ui version="4.0">
  <class>TimerWindow</class>
  <widget class="QWidget" name="TimerWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>344</width>
     <height>100</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>400</width>
+    <width>344</width>
     <height>100</height>
    </size>
   </property>
@@ -30,8 +33,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>401</width>
-     <height>101</height>
+     <width>281</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -41,22 +44,22 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
-      <width>381</width>
-      <height>81</height>
+      <y>30</y>
+      <width>261</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Arial Black</family>
       <pointsize>-1</pointsize>
-      <bold>true</bold>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(255, 255, 255);
-font-size: 40px;
-font-weight: bold;
+font-size: 20px;
+font-weight: normal;
 border: 2px solid  rgb(186, 193, 216);;
 border-radius: 10px;</string>
     </property>
@@ -70,7 +73,7 @@ border-radius: 10px;</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>70</x>
       <y>0</y>
       <width>141</width>
       <height>21</height>
@@ -87,7 +90,7 @@ border: none;
 </string>
     </property>
     <property name="text">
-     <string>Session ending in</string>
+     <string>Ending In...</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

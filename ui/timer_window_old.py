@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'timer_window.ui'
+# Form implementation generated from reading ui file 'D:\kawsar\pc_lock\desktop\ui\timer_window.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.2
 #
@@ -12,30 +12,29 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_TimerWindow(object):
     def setupUi(self, TimerWindow):
         TimerWindow.setObjectName("TimerWindow")
-        TimerWindow.setEnabled(True)
-        TimerWindow.resize(250, 100)
-        TimerWindow.setMinimumSize(QtCore.QSize(280, 80))
-        TimerWindow.setMaximumSize(QtCore.QSize(280, 80))
+        TimerWindow.resize(400, 100)
+        TimerWindow.setMinimumSize(QtCore.QSize(400, 100))
+        TimerWindow.setMaximumSize(QtCore.QSize(400, 100))
         self.widget = QtWidgets.QWidget(parent=TimerWindow)
-        self.widget.setGeometry(QtCore.QRect(0, 0, 281, 81))
+        self.widget.setGeometry(QtCore.QRect(0, 0, 401, 101))
         self.widget.setStyleSheet("background-color: rgb(0, 0, 0);")
         self.widget.setObjectName("widget")
         self.TimerWindowLabel = QtWidgets.QLabel(parent=self.widget)
-        self.TimerWindowLabel.setGeometry(QtCore.QRect(10, 30, 261, 41))
+        self.TimerWindowLabel.setGeometry(QtCore.QRect(10, 10, 381, 81))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
         font.setPointSize(-1)
-        font.setBold(False)
+        font.setBold(True)
         self.TimerWindowLabel.setFont(font)
         self.TimerWindowLabel.setStyleSheet("color: rgb(255, 255, 255);\n"
-"font-size: 20px;\n"
-"font-weight: normal;\n"
+"font-size: 40px;\n"
+"font-weight: bold;\n"
 "border: 2px solid  rgb(186, 193, 216);;\n"
 "border-radius: 10px;")
         self.TimerWindowLabel.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.TimerWindowLabel.setObjectName("TimerWindowLabel")
         self.label_4 = QtWidgets.QLabel(parent=self.widget)
-        self.label_4.setGeometry(QtCore.QRect(70, 0, 141, 21))
+        self.label_4.setGeometry(QtCore.QRect(130, 0, 141, 21))
         font = QtGui.QFont()
         font.setPointSize(13)
         self.label_4.setFont(font)
@@ -52,14 +51,4 @@ class Ui_TimerWindow(object):
         _translate = QtCore.QCoreApplication.translate
         TimerWindow.setWindowTitle(_translate("TimerWindow", "Form"))
         self.TimerWindowLabel.setText(_translate("TimerWindow", "Loading . . ."))
-        self.label_4.setText(_translate("TimerWindow", "Ending In..."))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    TimerWindow = QtWidgets.QWidget()
-    ui = Ui_TimerWindow()
-    ui.setupUi(TimerWindow)
-    TimerWindow.show()
-    sys.exit(app.exec())
+        self.label_4.setText(_translate("TimerWindow", "Session ending in"))
